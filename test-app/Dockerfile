@@ -1,8 +1,5 @@
-FROM python:3.9.6-alpine3.13 as dev
+FROM python:3.9.6-alpine3.13
 
-WORKDIR /work
-
-FROM dev as runtime
 WORKDIR /app
 
 COPY ./requirements.txt /app/
